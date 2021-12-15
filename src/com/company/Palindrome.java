@@ -21,7 +21,7 @@ public class Palindrome {
         boolean[][] dp = new boolean[n][n];
 
         // single letter substrings
-        //check for single letters and and reuse it in palindromes that have length greater than or equal to 3
+        //check for single letters and reuse it in palindromes that have length greater than or equal to 3
         for (int i = 0; i < n; ++i)
             dp[i][i] = true; //single letters are not palindromes so don't print
 

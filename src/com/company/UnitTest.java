@@ -7,21 +7,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UnitTest {
 
+    //test for single characters
     @Test
     public void test_printPalindrome_1() {
         assertEquals("", printPalindrome("a"));
     }
 
+    //test for string containing repeated characters
     @Test
     public void test_printPalindrome_2() {
         assertEquals("aa, 0, 2\n", printPalindrome("aa"));
     }
 
+    //test for string with 3 characters
     @Test
     public void test_printPalindrome_3() {
         assertEquals("aba, 0, 3\n", printPalindrome("aba"));
     }
 
+    //test for string given in question
     @Test
     public void test_printPalindrome_4() {
         assertEquals("LL, 7, 2\nII, 36, 2\nGG, 46, 2\nOO, 48, 2\nBCB, 1, 3\nOHO, 9, 3\nCEC, 15, 3\n" +
